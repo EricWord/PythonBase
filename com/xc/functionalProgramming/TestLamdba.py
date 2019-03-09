@@ -10,3 +10,13 @@ def build(x,y):
     return lambda : x*x+y*y
 
 print(build(1,2))
+
+#通过变量调用函数
+def now():
+    print('2019-03-09')
+
+f=now
+f()
+#通过_name_属性可以获取到函数的名字
+print(now.__name__)
+print(f.__name__)
